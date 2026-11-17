@@ -1,0 +1,18 @@
+{
+  "pilot.py": "44610e2ea760417b085b670e37dce0e8d2627889d408485126f3021752ce625d",
+  "policies.py": "10a837025a500c9f2aa76e3b1d5ffc88208f82da6f7d106103bf152c6baed82d",
+  "PROTOTYPE_AUDIT.md": "cb0f80a5bb00baa9b5002456d1f707b8d5ca29119ecd3b6fd3400706dffbfff8",
+  "q_table_metadata.json": "e708f3b475363ce9da5c1a0e8858222a4e634f9a759c893dec8acd690f370e3b",
+  "README.md": "b02d0c24c8018e9420c2f5336a6a158a3f8fdbf1138a68dc633aac85432ebcba",
+  "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+  "RESULTS.md": "b163ac1e4511f80343d4de6740655910bede60e70f938cfc6502bfee3b8cbd73",
+  "source_hashes.json": "919ba0061e011d678de91be3e7194c0634fb30fd58a75ff33cc5a829b0074caa",
+  "summarize.py": "1edff1148398d70d70ffb406a96429cb7eeedb6148ac6469b4e7fe212fd6d3d2",
+  "results\\paired_differences.csv": "735612b42a5dedad7f688b5c5642a850460c55f4ddfc5c9a50aec5d7e1766085",
+  "results\\per_seed.csv": "4bd2e18766241acad01982e2e3e1f905f18d7d29703732778081302173783022",
+  "results\\raw.json": "f96a0ae32f47e827f7bfccc3a5daa1cde8204815e96b39aa98f26386b22f6bc2",
+  "results\\summary.csv": "f37624cd0444bf21896b173a40c60ae18ef72e3c6161711b73457f0bd8936d99",
+  "results\\training.csv": "b1b054f7126e808b92f5b824f604d40d78cfe25186b22d7cb5e416ce4ca1627a",
+  "tests\\test_policies.py": "5083a8aaa29702a22d92a44dcd3030aab482522039e5d67d3a869ec274d52b4e",
+  "tests\\test_simulator.py": "0e52820ab589fa6be4940911bb2ad72a3e9ead36ff58dd0f9ad9c3ab7d239c9c"
+}

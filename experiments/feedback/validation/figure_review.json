@@ -1,0 +1,46 @@
+{
+  "figures_reviewed": [
+    "03_application_delivery.png",
+    "04_delivery_over_time.png"
+  ],
+  "visual_result": "Readable labels, complete legends, no observed clipping; overlap appropriately reflects small arm differences",
+  "independent_raw_check": [
+    {
+      "mode": "frozen",
+      "seeds": 30,
+      "A_mj": 97.52079122676024,
+      "D_mj": 91.37112316053326,
+      "energy_reduction_ratio_of_means_pct": 6.306007148698645,
+      "delivery_delta_pp": -0.13024691358024715,
+      "airtime_reduction_ratio_of_means_pct": 20.58598273034442,
+      "lower_energy_seeds": 21,
+      "independent_bootstrap_energy_delta95_mj": [
+        -9.783386835682014,
+        -2.9124062564169027
+      ],
+      "reported_bootstrap_energy_delta95_mj": [
+        -9.734488757905536,
+        -2.9206978449664027
+      ]
+    },
+    {
+      "mode": "online",
+      "seeds": 30,
+      "A_mj": 97.76409429276727,
+      "D_mj": 91.06431285248975,
+      "energy_reduction_ratio_of_means_pct": 6.853008242693015,
+      "delivery_delta_pp": 0.6709876543209881,
+      "airtime_reduction_ratio_of_means_pct": 22.959152048596042,
+      "lower_energy_seeds": 16,
+      "independent_bootstrap_energy_delta95_mj": [
+        -18.561050851795446,
+        4.384867380546442
+      ],
+      "reported_bootstrap_energy_delta95_mj": [
+        -18.554646507137097,
+        4.289863529459385
+      ]
+    }
+  ],
+  "interpretation": "Frozen energy reduction supported in this synthetic model. Delivery equivalence and online energy improvement are not established. No recovery advantage established."
+}

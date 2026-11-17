@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "evaluations": 9720,
+  "training_episodes": 1080,
+  "environment_groups": 540,
+  "frozen_table_groups": 540,
+  "seeds_per_comparison": 30,
+  "bootstrap_resamples": 10000,
+  "statistical_unit": "independent paired evaluation seed",
+  "primary_matrix_complete": true,
+  "source_hashes_verified": 6
+}

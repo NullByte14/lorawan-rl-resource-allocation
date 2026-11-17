@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "workers": 6,
+  "resumed_groups": 65,
+  "helper_sha256": "b4c74da1b478b519b2a54f7e181717eb84e499bf76fc5205db8920afd00a7532",
+  "policy": "Isolated independent seed groups; parent-only atomic checkpoint index updates",
+  "source_hashes_verified": 6
+}

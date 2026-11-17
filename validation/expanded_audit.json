@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "studies": [
+    {
+      "status": "passed",
+      "study": "robustness",
+      "evaluations": 9720,
+      "training_episodes": 1080,
+      "complete_case_count": 6,
+      "paired_environment_groups": 540,
+      "saved_initial_policy_fingerprints_checked": 360,
+      "source_hashes_verified": 6,
+      "all_unfavorable_and_negative_cases_retained": true
+    },
+    {
+      "status": "passed",
+      "study": "baselines",
+      "evaluations": 1080,
+      "training_episodes": 540,
+      "complete_case_count": 6,
+      "paired_environment_groups": 180,
+      "saved_initial_policy_fingerprints_checked": 180,
+      "source_hashes_verified": 8,
+      "all_unfavorable_and_negative_cases_retained": true
+    }
+  ],
+  "representative_saved_prior_replays": [
+    {
+      "study": "robustness",
+      "nodes": 120,
+      "seed": 1001,
+      "learner": "both",
+      "scenario": "channel_step",
+      "condition": "D",
+      "deterministic_fields_checked": 10,
+      "status": "passed"
+    },
+    {
+      "study": "baselines",
+      "nodes": 60,
+      "seed": 1001,
+      "learner": "thompson",
+      "scenario": "load_step",
+      "condition": "D",
+      "deterministic_fields_checked": 10,
+      "status": "passed"
+    }
+  ],
+  "replay_scope": "Historical bitwise replays run on the recorded Windows platform; other platforms validate fresh paired execution through the quick studies",
+  "interpretation": "Complete declared matrices and internal consistency; not external physical validation"
+}

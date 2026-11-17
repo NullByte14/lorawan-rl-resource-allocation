@@ -1,0 +1,9 @@
+.venv/
+.tmp/
+.mplcache/
+.mplconfig/
+__pycache__/
+reproduced_results/
+reproduced_figures/
+quick_results/
+quick_figures/

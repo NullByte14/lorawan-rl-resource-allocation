@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "mode": "frozen",
+      "nodes": 60,
+      "seed": 1001,
+      "learner": "both",
+      "condition": "D",
+      "deterministic_fields_checked": 11,
+      "status": "passed"
+    },
+    {
+      "mode": "online",
+      "nodes": 60,
+      "seed": 1001,
+      "learner": "both",
+      "condition": "D",
+      "deterministic_fields_checked": 11,
+      "status": "passed"
+    }
+  ],
+  "excluded_field": "elapsed_seconds: desktop timing is nondeterministic"
+}

@@ -1,0 +1,18 @@
+{
+  "evaluations": 1320,
+  "training_episodes": 1530,
+  "paired_trace_groups": 90,
+  "frozen_table_groups": 270,
+  "seeds_per_group": 30,
+  "pairing_and_frozen_checks": "passed",
+  "source_hashes_verified": 6,
+  "bootstrap_resamples": 10000,
+  "bootstrap_method": "seed-level paired percentile; deterministic SHA256-derived PRNG seeds",
+  "statistical_unit": "independent evaluation seed",
+  "undefined_secondary_metrics": "n_valid reported explicitly",
+  "primary_metrics": [
+    "pdr",
+    "app_delivery",
+    "j_per_delivery"
+  ]
+}

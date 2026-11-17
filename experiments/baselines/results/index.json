@@ -1,0 +1,210 @@
+{
+  "config": {
+    "nodes": 60,
+    "seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029,
+      1030
+    ],
+    "cases": [
+      "stable_low",
+      "stable_high",
+      "load_step",
+      "channel_step",
+      "lossy_feedback",
+      "no_feedback"
+    ],
+    "case_specs": {
+      "stable_low": {
+        "intervals": [
+          400.0,
+          400.0,
+          400.0
+        ],
+        "downlink_loss": 0.05,
+        "attenuation_db": 0.0,
+        "attenuation_start_phase": 1,
+        "description": "Light periodic traffic in all phases"
+      },
+      "stable_high": {
+        "intervals": [
+          160.0,
+          160.0,
+          160.0
+        ],
+        "downlink_loss": 0.05,
+        "attenuation_db": 0.0,
+        "attenuation_start_phase": 1,
+        "description": "Heavy periodic traffic in all phases"
+      },
+      "load_step": {
+        "intervals": [
+          400.0,
+          160.0,
+          400.0
+        ],
+        "downlink_loss": 0.05,
+        "attenuation_db": 0.0,
+        "attenuation_start_phase": 1,
+        "description": "Light to heavy to light traffic"
+      },
+      "channel_step": {
+        "intervals": [
+          400.0,
+          160.0,
+          400.0
+        ],
+        "downlink_loss": 0.05,
+        "attenuation_db": 6.0,
+        "attenuation_start_phase": 1,
+        "description": "Load step plus 6 dB UL/DL attenuation from phase 1 onward"
+      },
+      "lossy_feedback": {
+        "intervals": [
+          400.0,
+          160.0,
+          400.0
+        ],
+        "downlink_loss": 0.3,
+        "attenuation_db": 0.0,
+        "attenuation_start_phase": 1,
+        "description": "Load step with 30% additional downlink erasure"
+      },
+      "no_feedback": {
+        "intervals": [
+          400.0,
+          160.0,
+          400.0
+        ],
+        "downlink_loss": 1.0,
+        "attenuation_db": 0.0,
+        "attenuation_start_phase": 1,
+        "description": "All feedback erased; outcomes remain unknown"
+      }
+    },
+    "phase_seconds": 8000,
+    "train_episodes": 3,
+    "learners": [
+      "thompson",
+      "reward",
+      "both"
+    ],
+    "conditions": [
+      "A",
+      "D"
+    ],
+    "prior": "Thompson Beta(1,1) independently per action",
+    "common_training_case": "load_step",
+    "q_epsilon_train": 0.25,
+    "q_epsilon_evaluation": 0.05,
+    "alpha": 0.1,
+    "gamma": 0.9,
+    "beta": 0.2,
+    "energy_reference_j": 0.36383221248,
+    "python_version": "3.14.7",
+    "numpy_version": "2.3.5",
+    "comparison": "All online, same30SF/TP options and costed A/D protocols; TS objective is binary success, Q objectives include energy",
+    "reference_status": "Adapted delayed binary Thompson sampler, not an exact Navas energy-aware bandit replication"
+  },
+  "source_sha256": {
+    "experiments/feedback/engine.py": "b9ce30d6eed23e3323c6d93d78c9f4c85913ef0528755f5c4e5c352d857b47eb",
+    "experiments/feedback/policies.py": "d0bf41dd8380b1f4a97e4465e888bb04395043491b9a735e5437a7a34a68ec1a",
+    "experiments/feedback/feedback_codec.py": "5c0592b2b11a1671784bc7a163bcff76c3bc78ab832ffd6a153dcb0f81970491",
+    "experiments/feedback/run_experiment.py": "3cadc6198a5d66d0814c387a2187f2eec6ede72ebcaba029fab88960974aad36",
+    "experiments/feedback/analyze.py": "89e18e0bd6795b68da1a018bdc9391821fd8aabcd42ff60f26865147175917d2",
+    "experiments/robustness/run_suite.py": "8b208958125ca1e50949c703e3158f9287de62d131cd19350bcd493c64f31fd6",
+    "experiments/baselines/run_online.py": "94ce396b87171dd3c72f4b1e07ec18b679589907f9602af8cf0472a2088de900",
+    "experiments/baselines/analyze.py": "414ead521d7e242f22fa1fcebd3b4b6fc6d8f54ac9b91905b7b0876030eabbda"
+  },
+  "chunks": [
+    "chunks/s1001.json.gz",
+    "chunks/s1002.json.gz",
+    "chunks/s1003.json.gz",
+    "chunks/s1004.json.gz",
+    "chunks/s1005.json.gz",
+    "chunks/s1006.json.gz",
+    "chunks/s1007.json.gz",
+    "chunks/s1008.json.gz",
+    "chunks/s1009.json.gz",
+    "chunks/s1010.json.gz",
+    "chunks/s1011.json.gz",
+    "chunks/s1012.json.gz",
+    "chunks/s1013.json.gz",
+    "chunks/s1014.json.gz",
+    "chunks/s1015.json.gz",
+    "chunks/s1016.json.gz",
+    "chunks/s1017.json.gz",
+    "chunks/s1018.json.gz",
+    "chunks/s1019.json.gz",
+    "chunks/s1020.json.gz",
+    "chunks/s1021.json.gz",
+    "chunks/s1022.json.gz",
+    "chunks/s1023.json.gz",
+    "chunks/s1024.json.gz",
+    "chunks/s1025.json.gz",
+    "chunks/s1026.json.gz",
+    "chunks/s1027.json.gz",
+    "chunks/s1028.json.gz",
+    "chunks/s1029.json.gz",
+    "chunks/s1030.json.gz"
+  ],
+  "chunk_sha256": {
+    "chunks/s1001.json.gz": "ce5f16022a11b9aa0e6579a5aa81aa33e2c75a02c4ee24e96bfc9a4fa53d8a28",
+    "chunks/s1002.json.gz": "86eb1560e38dec113caea7c1add0da341cdbd0af3c48929af0cc07f5ff4d4f85",
+    "chunks/s1003.json.gz": "a298b28d7d25d4ea7164cb5a6cd902b91f4c6016bbe5e515db33681775e62e0c",
+    "chunks/s1004.json.gz": "87dd5678b87e039641527a34fbb75bc9bf6192ddbebf69b227b26872a20af20f",
+    "chunks/s1005.json.gz": "0611a79d98b3af47fe489e207ef6f258ee627cde552905012bf133cc35f71363",
+    "chunks/s1006.json.gz": "f87eb576562fe092688432344ed19714aaef40ee536242bd760f9aaa55dd5146",
+    "chunks/s1007.json.gz": "c878501b7501edb940a6c711c207b97ef6b3ec022df334a903e8763d860f8773",
+    "chunks/s1008.json.gz": "6df367ef640ab4c32a1176b7fe549b9b3acb8e3b0417ccebc7c1971393e5bfea",
+    "chunks/s1009.json.gz": "c334f83550fc389c84cf48dce6ec0f6595f114a93eff2b04a884bd02713d0f90",
+    "chunks/s1010.json.gz": "a68c2a44f1eb75fa08df02e9b220fefbca0ea5f2bcecd502174ccec5e206c0e4",
+    "chunks/s1011.json.gz": "e8fdcdb7dfafc8fead63f16932c535f7b29f4ef51f182befc2a801473ce8d485",
+    "chunks/s1012.json.gz": "7b4678a0dffd9c93fd15046b61c95d9061fa4b3d5e3c87fea976cfbe3a441245",
+    "chunks/s1013.json.gz": "a9bf4b40ce8f2334b151e53f3578d92407e782acb0a959f42997b913b5de1462",
+    "chunks/s1014.json.gz": "3ac035d219d09dd01625d3de993833989630751b7d2e3ff1f36dcae56db17891",
+    "chunks/s1015.json.gz": "1a867ec6a28da4af3697a14e15ef4bc88e19d88199f20b0af5d70562fbc7b02f",
+    "chunks/s1016.json.gz": "3dc0252257024ab0fe88ca464a6a7f88f0d59121fe08ec2e3f02c3d1bdaa1b9d",
+    "chunks/s1017.json.gz": "ee1a9869de30bedbb7515a9dc74a1239f78b9fc0f262aed9f7df637a87db2d66",
+    "chunks/s1018.json.gz": "357c1e9d0b87ee1370b414fe590c47323e87b0d2efb8bf452793019de29b4622",
+    "chunks/s1019.json.gz": "2481b73ea3ffef4ed3a81a10323a566a0ba36a78c6f36548b38678d0b1a23b69",
+    "chunks/s1020.json.gz": "1233103cbdbf6f53a28c39ca47574c77e335610c298710ab9c90110c1d6ef877",
+    "chunks/s1021.json.gz": "ab8b8e5f1f5bbed988795afb38e0774c8c8d27af25cc1d622b649f4a7b7c8815",
+    "chunks/s1022.json.gz": "1f4f65198c32b1407dad23af515f02e6c410d11967880193e496505d50a8747c",
+    "chunks/s1023.json.gz": "c75c1d97105d1ad85c851d25325252c594c86d55f2fac9f26b319ad393b4de2b",
+    "chunks/s1024.json.gz": "e3f2f38cbb17d5bad1999035cd7b88a814240d19734400590c0c70036d2a4944",
+    "chunks/s1025.json.gz": "840211a84242b51db86065ed07cf80eaa5548ff7cc4c6d41cc158b7e6a0bc22d",
+    "chunks/s1026.json.gz": "b54aab4b261a26adb30c839535127a831ce42150c1f9874e35a05714ac4e82fe",
+    "chunks/s1027.json.gz": "fd8961f768458fb5afad8f0574826dc4208468c40d1d1ba8f47faa0398f8135c",
+    "chunks/s1028.json.gz": "bc48f44c6eab34073ee0c7ea30652f40296721da31eec604d85f3f89b8fc7a65",
+    "chunks/s1029.json.gz": "7a1eb1b876904dde19332f9b3bd1ca98cf4cbae7c1f34870779589e6acbe6a71",
+    "chunks/s1030.json.gz": "03056388dd09492f517a1ccb59104a388b6edd012d97ecd4615784fc147817c1"
+  }
+}

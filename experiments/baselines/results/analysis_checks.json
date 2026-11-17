@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "evaluations": 1080,
+  "training_episodes": 540,
+  "paired_seeds": 30,
+  "environment_groups": 180,
+  "initial_prior_groups": 180,
+  "bootstrap_resamples": 10000,
+  "statistical_unit": "evaluation seed",
+  "comparisons": "pointwise paired percentile bootstrap"
+}

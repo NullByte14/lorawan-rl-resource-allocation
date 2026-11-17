@@ -1,0 +1,25 @@
+{
+  "client_date": "2026-11-17",
+  "status": "passed",
+  "simulator": "Independent Python/NumPy discrete-event model; not ns-3 or hardware",
+  "evaluation_runs": 1320,
+  "training_episodes": 1530,
+  "independent_paired_seeds_per_comparison": 30,
+  "frozen_device_counts": [30, 60, 120],
+  "online_device_count": 60,
+  "automated_tests_passed": 36,
+  "codec_receipt_patterns_checked": 65536,
+  "analysis_bootstrap_resamples": 10000,
+  "saved_pretrained_q_tables": 510,
+  "original_pilot_manifest_files_unchanged": 16,
+  "deterministic_saved_table_replays_passed": 2,
+  "figures_visually_reviewed": [
+    "01_feedback_airtime.png",
+    "02_energy_per_delivery.png",
+    "03_application_delivery.png",
+    "04_delivery_over_time.png"
+  ],
+  "one_command_demo": "reproduce.py --quick: 36 tests, 40 small evaluations, 22 small training episodes, four plots; passed",
+  "dependency_check": "pip check: no broken requirements",
+  "interpretation": "Fixed-table feedback savings supported within model. Online energy gain and delivery equivalence not established. No published-DSF2R victory or novelty claim."
+}

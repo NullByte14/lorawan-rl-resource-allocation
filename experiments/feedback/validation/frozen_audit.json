@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "frozen_evaluations": 1080,
+  "frozen_training_episodes": 810,
+  "evaluation_seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025,
+    1026,
+    1027,
+    1028,
+    1029,
+    1030
+  ],
+  "device_counts": [
+    30,
+    60,
+    120
+  ],
+  "learners": [
+    "original",
+    "reward",
+    "both"
+  ],
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "unique_q_snapshots_checked": 270,
+  "regenerated_environment_groups": 90,
+  "source_files_checked": 6,
+  "legacy_manifest_files_unchanged": 16,
+  "errors": [],
+  "scope": "Frozen records independently checked; online records deliberately ignored while appending. Q digests recomputed directly from saved arrays, not runner hash function.",
+  "limitations": [
+    "Original DSF2R is a reconstruction with declared failed-frame SNR assumptions, not authors training/code reproduction.",
+    "Frozen radio choices still react to received state, but no evaluation Q updates occur.",
+    "Comparing different learner families may reflect training/state differences; causal feedback comparison is within each learner with identical initial table.",
+    "Shorter reports can free duty budget for additional reports, so total airtime need not equal fixed-count analytical savings.",
+    "Physical/energy model remains synthetic and uncalibrated; no ns-3/hardware validation."
+  ]
+}

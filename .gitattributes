@@ -1,0 +1,7 @@
+# Preserve source/data bytes: archived experiments verify cryptographic hashes.
+# Python accepts both LF and CRLF; automatic checkout conversion invalidates evidence.
+* -text
+*.png binary
+*.npz binary
+*.gz binary
+*.zip binary
